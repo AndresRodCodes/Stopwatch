@@ -59,3 +59,13 @@ function startStop() {
 		isOn = true;
 	}
 }
+
+function reset() {
+	if (!isOn) {
+		seconds = 0;
+		minutes = 0;
+		hours = 0;
+
+		document.getElementById('time').innerHTML = '00 : 00 : 00';
+	}
+}
