@@ -44,10 +44,10 @@ function stopwatch() {
 	} else {
 		displayHours = hours;
 	}
-
+	// Update the time on screen
 	document.getElementById('time').innerHTML = displayHours + ' : ' + displayMinutes + ' : ' + displaySeconds;
 }
-
+// Starts and stops the start watch
 function startStop() {
 	if (isOn) {
 		window.clearInterval(interval);
@@ -60,12 +60,13 @@ function startStop() {
 	}
 }
 
+// Resets the stopwatch if it is not on
 function reset() {
-	if (!isOn) {
-		seconds = 0;
-		minutes = 0;
-		hours = 0;
+	window.clearInterval(interval);
+	seconds = 0;
+	minutes = 0;
+	hours = 0;
 
-		document.getElementById('time').innerHTML = '00 : 00 : 00';
-	}
+	document.getElementById('time').innerHTML = '00 : 00 : 00';
+	document.getElementById('startStopBtn').innerHTML = 'Start';
 }
