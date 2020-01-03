@@ -1,3 +1,32 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 #timer {
+	width: 100vw;
+	height: 100vh;
+}
+#timer #title {
+	font-size: 8vw;
+}
+
+#timer #time {
+	font-size: 10vw;
+}
+
+#timer .large-btn {
+	width: 49vw;
+	height: 37vh;
+	font-size: 5vw;
+}
+
+.hv-center-container {
+	text-align: center;
+	padding-top: 10vw;
+}
+
+.h-center {
 	text-align: center;
 }
