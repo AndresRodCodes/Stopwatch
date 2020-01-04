@@ -7,6 +7,7 @@
 #timer {
 	width: 100vw;
 	height: 100vh;
+	font-family: 'Cute Font', cursive;
 }
 #timer #title {
 	font-size: 8vw;
@@ -20,6 +21,16 @@
 	width: 49vw;
 	height: 37vh;
 	font-size: 5vw;
+	font-family: inherit;
+	border-radius: 20px;
+}
+
+#timer #startStopBtn {
+	background-color: #27DB36;
+}
+
+#timer #resetBtn {
+	background-color: grey;
 }
 
 .hv-center-container {

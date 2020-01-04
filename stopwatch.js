@@ -52,10 +52,12 @@ function startStop() {
 	if (isOn) {
 		window.clearInterval(interval);
 		document.getElementById('startStopBtn').innerHTML = 'Start';
+		document.getElementById('startStopBtn').style.backgroundColor = '#27DB36';
 		isOn = false;
 	} else {
 		interval = window.setInterval(stopwatch, 1000);
 		document.getElementById('startStopBtn').innerHTML = 'Stop';
+		document.getElementById('startStopBtn').style.backgroundColor = '#DB4127';
 		isOn = true;
 	}
 }
@@ -69,4 +71,5 @@ function reset() {
 
 	document.getElementById('time').innerHTML = '00 : 00 : 00';
 	document.getElementById('startStopBtn').innerHTML = 'Start';
+	document.getElementById('startStopBtn').style.backgroundColor = '#27DB36';
 }
